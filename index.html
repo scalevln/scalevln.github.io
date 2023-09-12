@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Scaling Data Generation in Vision-and-Language Navigation">
+  <meta name="keywords" content="VLN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScaleVLN</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./prj_static/css/bulma.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./prj_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./prj_static/css/index.css">
+  <!-- <link rel="icon" href="./prj_static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./prj_static/js/fontawesome.all.min.js"></script>
+  <script src="./prj_static/js/bulma-carousel.min.js"></script>
+  <script src="./prj_static/js/bulma-slider.min.js"></script>
+  <script src="./prj_static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">Scaling Data Generation in Vision-and-Language Navigation</h1>
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block">
+              <a href="https://zunwang1.github.io/">Zun Wang</a><sup>1,2*</sup> &nbsp
+              <a href="https://jialuli-luka.github.io/">Jialu Li</a><sup>3*</sup> &nbsp
+              <a href="https://yiconghong.me/">Yicong Hong</a><sup>1*</sup>
+              <br>
+            <span class="author-block", style="padding-left:5px">
+              <a href="https://shepnerd.github.io/">Yi Wang</a><sup>2</sup> &nbsp
+              <a href="http://www.qi-wu.me/">Qi Wu</a><sup>4</sup> &nbsp
+              <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a><sup>3</sup> &nbsp
+              <a href="http://users.cecs.anu.edu.au/~sgould/">Stephen Gould</a><sup>1</sup> &nbsp
+              <a href="https://www.cs.unc.edu/~airsplay/">Hao Tan</a><sup>5</sup> &nbsp
+              <a href="https://scholar.google.com/citations?hl=en&user=gFtI-8QAAAAJ">Yu Qiao</a><sup>2</sup> &nbsp
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <sup>1</sup><span class="author-block">The Australian National University </span>&nbsp
+            <sup>2</sup><span class="author-block">OpenGVlab, Shanghai AI Laboratory </span>&nbsp
+            <br>
+            <sup>3</sup><span class="author-block">University of North Carolina, Chapel Hill</span>&nbsp
+            <sup>4</sup><span class="author-block">University of Adelaide </span>&nbsp
+            <sup>5</sup><span class="author-block">Adobe Research </span>&nbsp
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2307.15644"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/wz0919/ScaleVLN"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <center>
+        <video id="teaser" autoplay controls muted width="150%">
+          <source src="./ScaleVLN/video.mov" type="video/mp4">
+        </video>
+        </center>
+
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent research in language-guided visual navigation has demonstrated a significant demand for the diversity of traversable environments and the quantity of supervision for training generalizable agents. To tackle the common data scarcity issue in existing vision-and-language navigation datasets, we propose an effective paradigm for generating large-scale data for learning, which applies <b>1200+ photo-realistic environments</b> from HM3D and Gibson datasets and synthesizes <b>4.9 million instruction-trajectory pairs</b> using fully-accessible resources on the web. Importantly, we investigate the influence of each component in this paradigm on the agent's performance and study how to adequately apply the augmented data to pre-train and fine-tune an agent. Thanks to our large-scale dataset, the performance of an existing agent can be pushed up (+11% absolute with regard to previous SoTA) to a significantly new best of <b>80% single-run success rate</b> on the R2R test split by simple imitation learning. <b>The long-lasting generalization gap between navigating in seen and unseen environments is also reduced to less than 1%</b> (versus 8% in the previous best method). Moreover, our paradigm also facilitates different models to achieve new state-of-the-art navigation results on CVDN, REVERIE, and R2R in continuous environments.          
+          </p>
+        </div>
+      </div>
+    </div>
+
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Overview</h2>
+
+      <center><img src="./ScaleVLN/overall.jpg" alt="Teaser" width="200%"></center>
+
+      <div class="content has-text-justified">
+<p>Overview of our ScaleVLN paradigm for generating large-scale augmented VLN data. ScaleVLN applies 1200+ unannotated 3D scans from the HM3D and Gibson environments, builds navigation graphs for each scene, recovers faulty rendered images with a Co-Mod GAN, samples trajectories and generates corresponding instructions, resulting in 4.9M augmented data to facilitate learning various downstream language-guided navigation tasks.  </p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">How to utilize the ScaleVLN data?</h2>
+
+<center><img src="./ScaleVLN/howto.png" alt="Teaser" width="100%"></center>
+      <div class="content has-text-justified">
+<p>
+  
+  We found that incorporating with ScaleVLN data always improves agent performances while pretraining with Prevalent and ScaleVLN, then finetuning with only ScaleVLN as augmentation datasets performs best.
+ </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+    <h2 class="title is-3">Results</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5">Bridging the Seen-and-Unseen Gap</h2>
+  
+      <center><img src="./ScaleVLN/gap.png" alt="Teaser" width="75%"></center>
+  
+      <div class="content has-text-justified">
+        We show that training with ScaleVLN can nearly bridge the generalization gap between navigating in seen and unseen environments of R2R dataset.
+      </div>
+    </div>
+    </div>
+    <h2 class="title is-5">Comparison to SoTA</h2>
+    <center><img src="./ScaleVLN/r2r_sota.png" alt="Teaser" width="100%"></center>
+    <center><img src="./ScaleVLN/rvr_cvdn_sota.png" alt="Teaser" width="60%"></center>
+    <center><img src="./ScaleVLN/r2rce_sota.png" alt="Teaser" width="60%"></center>
+      <div class="content has-text-justified">
+<p>Comparison with state-of-the-art agents on Room-to-Room (R2R), REVERIE, Cooperative Vision-and-Dialog Navigation (CVDN), and Room-to-Room in Continuous Environment (R2R-CE) datasets.</p>
+      </div>
+      <h2 class="title is-5">Scaling VLN data, What Really Matters?</h2>
+      <center><img src="./ScaleVLN/matters1.png" alt="Teaser" width="100%"></center>
+      <p>We show that traversable graphs and photorealistic images improve downstream performance.</p>
+      <center><img src="./ScaleVLN/matter2.png" alt="Teaser" width="100%"></center>
+      <p>We show that adding more scenes and data consistently improves downstream performance.</p>
+        <div class="content has-text-justified">
+  
+        </div>
+    </div>
+  </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{wang2023scalevln,
+      author    = {Zun Wang, Jialu Li, Yicong Hong, Yi Wang, Qi Wu, Mohit Bansal, Stephen Gould, Hao Tan, Yu Qiao},
+      title     = {Scaling Data Generation in Vision-and-Language Navigation},
+      booktitle = {ICCV 2023},
+      year      = {2023}
+  }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align:right;font-size:small;">
+          <a href="https://github.com/nerfies/nerfies.github.io">
+            Template from here.
+          </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
