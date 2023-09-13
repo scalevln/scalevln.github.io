@@ -118,10 +118,30 @@
           <p>
             Recent research in language-guided visual navigation has demonstrated a significant demand for the diversity of traversable environments and the quantity of supervision for training generalizable agents. To tackle the common data scarcity issue in existing vision-and-language navigation datasets, we propose an effective paradigm for generating large-scale data for learning, which applies <b>1200+ photo-realistic environments</b> from HM3D and Gibson datasets and synthesizes <b>4.9 million instruction-trajectory pairs</b> using fully-accessible resources on the web. Importantly, we investigate the influence of each component in this paradigm on the agent's performance and study how to adequately apply the augmented data to pre-train and fine-tune an agent. Thanks to our large-scale dataset, the performance of an existing agent can be pushed up (+11% absolute with regard to previous SoTA) to a significantly new best of <b>80% single-run success rate</b> on the R2R test split by simple imitation learning. <b>The long-lasting generalization gap between navigating in seen and unseen environments is also reduced to less than 1%</b> (versus 8% in the previous best method). Moreover, our paradigm also facilitates different models to achieve new state-of-the-art navigation results on CVDN, REVERIE, and R2R in continuous environments.          
           </p>
+          
         </div>
       </div>
     </div>
+  </section>
+  <hr>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+
+      <h2 class="title is-3">SoTA Timeline</h2>
+  
+        <center><img src="./ScaleVLN/sota_timeline.png" alt="Teaser" width="75%"></center>
+  
+        <div class="content has-text-justified">
+  <p>Agent success rate with increasing data size on addressing the R2R navigation task over time. Our proposed method creates 4.9M instruction-trajectories pairs for learn- ing, which greatly boosts the agent’s performance, and for the first time approaching human results.  </p>
+        </div>
+  
+      </div>
+    </div>
+    </div>
 </section>
 <hr>
 
@@ -175,7 +195,7 @@
       <center><img src="./ScaleVLN/gap.png" alt="Teaser" width="75%"></center>
   
       <div class="content has-text-justified">
-        We show that training with ScaleVLN can nearly bridge the generalization gap between navigating in seen and unseen environments of R2R dataset.
+        We show that training with ScaleVLN can nearly bridge the generalization gap between navigating in seen and unseen environments in R2R-navigation tasks.
       </div>
     </div>
     </div>
